@@ -305,7 +305,7 @@ class Game():
 def gameInit():
 	pygame.init()
 	screen = pygame.display.set_mode((WIDTH, HEIGHT))
-	pygame.display.set_caption('消消乐')
+	pygame.display.set_caption('博君一肖笑笑乐！')
 	# 加载字体
 	font = pygame.font.Font(os.path.join(ROOTDIR, 'resources/simsun.ttc'), 25)
 	# 加载图片
