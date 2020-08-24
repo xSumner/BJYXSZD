@@ -307,11 +307,12 @@ def gameInit():
 	screen = pygame.display.set_mode((WIDTH, HEIGHT))
 	pygame.display.set_caption('博君一肖笑笑乐！')
 	# 加载字体
-	font = pygame.font.Font(os.path.join(ROOTDIR, 'resources/simsun.ttc'), 25)
+	# font = pygame.font.Font(os.path.join(ROOTDIR, 'resources/simsun.ttc'), 25)
+	font = pygame.font.Font('simsun.ttc', 25)
 	# 加载图片
 	gem_imgs = []
 	for i in range(1, 8):
-		gem_imgs.append(os.path.join(ROOTDIR, 'resources/images/gem%s.png' % i))
+		gem_imgs.append('images/gem%s.png' % i)
 	game = Game(screen, font, gem_imgs)
 	while True:
 		score = game.start()
